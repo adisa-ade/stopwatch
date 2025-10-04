@@ -68,7 +68,7 @@ toggle.addEventListener('click', () => {
     isDark = !isDark    
     document.body.style.backgroundColor = isDark ? '#F9F9F9' : '#1E1E1E'
     document.body.style.color = isDark ? '#111827' : '#F9FAFB'            
-    toggle.innerHTML = isDark ? `<img src="./icons/light-svgrepo-com.svg" alt="">` : `<img src="./icons/dark-mode-svgrepo-com.svg" alt="dark-mode-svgrepo-com" srcset="">`
+    toggle.innerHTML = isDark ? `<img src="./icons/dark-mode-svgrepo-com.svg" alt="dark-mode-svgrepo-com" srcset="">` :`<img src="./icons/light-svgrepo-com.svg" alt="">`
     document.body.style.transition = '1.5s ease-in-out'
     
     buttons.forEach((element) => {    
