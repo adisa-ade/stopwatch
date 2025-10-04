@@ -37,7 +37,7 @@ stopwatch-project
 - Click Lap to record intermediate times.
 - Click Stop to pause the timer.
 - Click Clear to reset everything.
-- Use the 🌙/☀️ toggle to switch themes.
+- Use the dark/light toggle to switch themes.
 
 
 ## Screenshot
@@ -54,7 +54,5 @@ Inspired by [Dania Al-Hakim](https://www.behance.net/gallery/131661811/Javascrip
 
 ## Future Improvements
 
-- Save laps using localStorage
 - Add sound or animation feedback on lap
 - Add export (download laps as .txt)
-- Improve accessibility with ARIA labels
