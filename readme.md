@@ -42,7 +42,7 @@ stopwatch-project
 
 ## Screenshot
 
-[Stopwatch Screenshot](./screenshot.png)
+(./screenshot.png)
 
 
 ## Acknowledgements
