@@ -22,7 +22,7 @@ stopwatch-project
 ├── style.css         # Styling and responsiveness
 ├── app.js            # Stopwatch functionality and logic
 └── /icons            # Icon files for dark/light mode
-
+```
 ---
 
 
@@ -52,7 +52,7 @@ url('')
 ---
 
 
-##Acknowledgements
+## Acknowledgements
 
 Inspired by minimal stopwatch UI concepts.
 
