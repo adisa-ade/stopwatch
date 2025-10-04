@@ -43,7 +43,7 @@ stopwatch-project
 ## Screenshot
 
 <p align="center">
-  <img src="./screenshot.png" alt="Stopwatch Web App Screenshot" width="700">
+  <img src="./Screenshot.png" alt="Stopwatch Web App Screenshot" width="700">
 </p>
 
 
