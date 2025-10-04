@@ -79,16 +79,14 @@ ul li{
     overflow-y: auto;
 }
 
-@media screen and (max-width:900px) {    
+@media screen and (max-width:900px) {
+    h1{
+        font-size: 1.6em;        
+    }
     .timer{
-        font-size: 2.5rem;         
+        font-size: 3rem;         
     }       
     button{
-        font-size: 2rem;
-        padding: 20px;
-    }
-    button:hover{    
-        transform:none;
-        padding: 15px;
-    }
+        font-size: 2rem;        
+    }    
 }
