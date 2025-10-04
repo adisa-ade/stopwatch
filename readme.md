@@ -49,7 +49,7 @@ stopwatch-project
 
 ## Acknowledgements
 
-Inspired by [https://www.behance.net/gallery/131661811/Javascript-Stopwatch?tracking_source=search_projects%7Cstopwatch+figma&l=16] minimal stopwatch UI concepts.
+Inspired by [Dania Al-Hakim] (https://www.behance.net/gallery/131661811/Javascript-Stopwatch?tracking_source=search_projects%7Cstopwatch+figma&l=16) minimal stopwatch UI concept.
 
 
 ## Future Improvements
