@@ -6,7 +6,6 @@
 body{    
     background-color: var(--bg-dark);  
     color: var(--text-dark);
-    text-align: center;
 }
 header{
     text-align: center;
