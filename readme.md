@@ -25,19 +25,19 @@ stopwatch-project
 
 ## Technologies Used
 
--HTML5
--CSS3 (Flexbox & Media Queries)
--Vanilla JavaScript (ES6+)
--Google Fonts (Poppins)
+- HTML5
+- CSS3 (Flexbox & Media Queries)
+- Vanilla JavaScript (ES6+)
+- Google Fonts (Poppins)
 
 
 ## How It Works
 
--Click Start to begin the timer.
--Click Lap to record intermediate times.
--Click Stop to pause the timer.
--Click Clear to reset everything.
--Use the 🌙/☀️ toggle to switch themes.
+- Click Start to begin the timer.
+- Click Lap to record intermediate times.
+- Click Stop to pause the timer.
+- Click Clear to reset everything.
+- Use the 🌙/☀️ toggle to switch themes.
 
 
 ## Screenshot
@@ -52,7 +52,7 @@ Inspired by minimal stopwatch UI concepts.
 
 ## Future Improvements
 
--Save laps using localStorage
--Add sound or animation feedback on lap
--Add export (download laps as .txt)
--Improve accessibility with ARIA labels
+- Save laps using localStorage
+- Add sound or animation feedback on lap
+- Add export (download laps as .txt)
+- Improve accessibility with ARIA labels
