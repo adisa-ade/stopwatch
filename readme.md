@@ -2,7 +2,6 @@
 
 A responsive stopwatch web application built with **HTML**, **CSS**, and **JavaScript** as part of my **AltSchool Africa – First Semester Project**.
 
----
 
 ## Features
 
@@ -12,7 +11,6 @@ A responsive stopwatch web application built with **HTML**, **CSS**, and **JavaS
 - Responsive design for mobile and desktop
 - Smooth transitions and user-friendly layout
 
----
 
 ## Project Structure
 
@@ -23,7 +21,6 @@ stopwatch-project
 ├── app.js            # Stopwatch functionality and logic
 └── /icons            # Icon files for dark/light mode
 ```
----
 
 
 ## Technologies Used
@@ -33,7 +30,6 @@ stopwatch-project
 -Vanilla JavaScript (ES6+)
 -Google Fonts (Poppins)
 
----
 
 ## How It Works
 
@@ -43,20 +39,15 @@ stopwatch-project
 -Click Clear to reset everything.
 -Use the 🌙/☀️ toggle to switch themes.
 
----
 
 ## Screenshot
 
 url('')
 
----
-
 
 ## Acknowledgements
 
 Inspired by minimal stopwatch UI concepts.
-
----
 
 
 ## Future Improvements
