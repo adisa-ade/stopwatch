@@ -15,12 +15,13 @@ const availableLaps = document.querySelector('#available-laps')
 
 let isDark = false
 let timer;
-let isRunning = false
+let isTimerRunning = false
 let milliseconds = 0
 let seconds = 0
 let minutes = 0
 let hours = 0
 const saveLaps = [] // Stores all recorded laps
+
 
 // Format and update displayed stopwatch values
 const formatStopwatchValues = () => {    
@@ -36,9 +37,9 @@ const formatStopwatchValues = () => {
 }
 
 const startTimer = () => {
-    if (isRunning) return
-    isRunning = true    
-    
+    if (isTimerRunning) return
+    isTimerRunning = true    
+
     lapBtn.style.display = 'block'
     stopBtn.style.display = 'block'          
     startBtn.style.display = 'none'
@@ -62,8 +63,9 @@ const startTimer = () => {
 }
 
 
-
 // EVENT LISTENERS
+
+// SWITCH TOGGLE (DARK/LIGHT)
 toggle.addEventListener('click', () => {    
     isDark = !isDark    
     document.body.style.backgroundColor = isDark ? '#F9F9F9' : '#1E1E1E'
@@ -78,13 +80,15 @@ toggle.addEventListener('click', () => {
     })    
 })
 
+// START TIMER
 startBtn.addEventListener('click', () => {
     startTimer()    
     clearBtn.style.display = 'none' 
 })
 
+// STOP TIMER
 stopBtn.addEventListener('click', () => {
-    isRunning = false
+    isTimerRunning = false
     startBtn.style.display = 'block'
     stopBtn.style.display = 'none'
     lapBtn.style.display = 'none'  
@@ -92,8 +96,9 @@ stopBtn.addEventListener('click', () => {
     clearInterval(timer)    
 })
 
+// CLEAR TIMER
 clearBtn.addEventListener('click', () => {    
-    isRunning = false
+    isTimerRunning = false
     milliseconds = 0
     seconds = 0
     minutes = 0
@@ -108,18 +113,22 @@ clearBtn.addEventListener('click', () => {
     clearInterval(timer)    
 })
 
+// ADD LAP TO LIST
 lapBtn.addEventListener('click', ()=> {
     availableLaps.innerHTML = '';
     showLapsSaved.style.display = 'block'
     availableLaps.innerHTML = '';
+    
+    // push current time to the (saveLaps) array when the lap button is clicked
     saveLaps.push(`
         ${hours < 10 ? `0${hours}` : hours}:
         ${minutes < 10 ? `0${minutes}` : minutes}:
         ${seconds < 10 ? `0${seconds}` : seconds}:
         ${milliseconds < 10 ? `0${milliseconds}` : milliseconds}`)    
+
     saveLaps.forEach((e, i) => {
         const li = document.createElement('li')
-        li.innerHTML = `Lap ${i + 1}: ${e}s`
+        li.innerHTML = `Lap ${i + 1}: ${e}  ms`
         availableLaps.appendChild(li)        
     })
 })

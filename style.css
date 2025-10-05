@@ -2,9 +2,15 @@
     --bg-dark: #1E1E1E;
     --text-dark: #F9FAFB;
     --accent: #F39C12;
+    --cyan: #00f7ff;
+    --btn-text: #F5F5F5;
+  }
+  * {
+   box-sizing: border-box; 
   }
 body{    
     background-color: var(--bg-dark);  
+    font-family: "Poppins", sans-serif;
     color: var(--text-dark);
 }
 header{
@@ -21,26 +27,21 @@ header{
 }
 main{    
     display: flex;
-    flex-direction: column;
-    font-family: "Poppins", sans-serif;
+    flex-direction: column;    
     align-items: center;
     margin-top: 50px;
     gap: 50px;
 }
 h1{
-    font-size: 3em;
+    font-size: 3.3em;
     font-weight: bolder;
 }
 .timer{
     font-size: 4.5rem; 
     font-weight: bold;
-    color: #00f7ff;
+    color: var(--cyan)
 }
 .controls-btn{
-    display: flex;
-    gap: 40px;
-}
-.btn{
     display: flex;
     gap: 40px;
 }
@@ -52,7 +53,7 @@ h1{
     border-radius: 10px;
     cursor: pointer;        
     background-color: var(--accent);  
-    color: #F5F5F5;
+    color: var(--btn-text);
     transition: 0.3s ease, transform 0.2s ease;
 }
 button:hover{    
@@ -67,7 +68,7 @@ button:hover{
     display: none;    
 }
 ul{
-    padding-left: 10px;    
+    padding-left: 10px;        
 }
 ul li{
     margin-top: 5px;    
@@ -78,15 +79,24 @@ ul li{
     max-height: 200px;
     overflow-y: auto;
 }
-
+/* TABLETS SCREENS */
 @media screen and (max-width:900px) {
     h1{
-        font-size: 1.6em;        
+        font-size: 3em;        
     }
     .timer{
-        font-size: 3rem;         
+        font-size: 4rem;         
     }       
-    button{
-        font-size: 2rem;        
-    }    
+}
+/* MOBILE SCREENS */
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 2.5em;        
+        text-align: left;
+    }
+    .timer{
+        font-size: 3.5rem;         
+    } 
+    .laps{
+        font-size: 1.3rem;    
 }

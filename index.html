@@ -11,29 +11,41 @@
     <title>Stopwatch</title>
 </head>
 <body>
+    <!-- HEADER SECTION-->
     <header>
         <div></div>
         <h1>Chasing Records, One Tick at a Time</h1>
-        <button id="toggle" class="button"><img src="./icons/light-svgrepo-com.svg" alt="Toggle dark mode icon" srcset=""></button>        
+        <button id="toggle" class="button">
+            <img src="./icons/light-svgrepo-com.svg" alt="Toggle dark mode icon" srcset="">
+        </button>        
     </header>
-        
+        <!-- MAIN SECTION -->
     <main>        
         <section>
-            <div class="timer"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span></div>
+            <div class="timer">
+                <span id="hours">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>:
+                <span id="milliseconds">00</span>
+            </div>
         </section>
+        <!-- STOPWATCH CONTROL BUTTONS-->
         <section class="controls-btn">
             <div>
                 <button id="start" class="button">Start</button>                
                 <button id="stop" class="button">Stop</button>                
             </div>
-            <div class="btn">
+            <div>
                 <button id="lap" class="button">Lap</button>                
                 <button id="clear" class="button">Clear</button>
             </div>            
         </section>
+        <!-- LAP DISPLAY SECTION (HIDDEN AT FIRST) -->
         <section class="laps">
             <h3>Laps</h3>            
-            <ul id="available-laps"></ul>
+            <ul id="available-laps">
+                <!-- LAP LISTS -->
+            </ul>
         </section>        
     </main>    
     <script src="app.js"></script>
