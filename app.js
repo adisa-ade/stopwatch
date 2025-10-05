@@ -62,7 +62,6 @@ const startTimer = () => {
     }, 10);
 }
 
-
 // EVENT LISTENERS
 
 // SWITCH TOGGLE (DARK/LIGHT)
