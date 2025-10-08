@@ -1,15 +1,15 @@
 :root {
-    --bg-dark: #1E1E1E;
+    --bg-color: rgb(211, 35, 35);    
     --text-dark: #F9FAFB;
     --accent: #F39C12;
-    --cyan: #00f7ff;
+    --white: #e2ecec;
     --btn-text: #F5F5F5;
   }
   * {
    box-sizing: border-box; 
   }
 body{    
-    background-color: var(--bg-dark);  
+    background-color: var(--bg-color);  
     font-family: "Poppins", sans-serif;
     color: var(--text-dark);
 }
@@ -39,7 +39,7 @@ h1{
 .timer{
     font-size: 4.5rem; 
     font-weight: bold;
-    color: var(--cyan)
+    color: var(--white)
 }
 .controls-btn{
     display: flex;

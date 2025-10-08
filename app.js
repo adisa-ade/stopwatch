@@ -66,16 +66,13 @@ const startTimer = () => {
 
 // SWITCH TOGGLE (DARK/LIGHT)
 toggle.addEventListener('click', () => {    
-    isDark = !isDark    
-    document.body.style.backgroundColor = isDark ? '#F9F9F9' : '#1E1E1E'
-    document.body.style.color = isDark ? '#111827' : '#F9FAFB'            
-    toggle.innerHTML = isDark ? `<img src="./icons/dark-mode-svgrepo-com.svg" alt="dark-mode-svgrepo-com" srcset="">` :`<img src="./icons/light-svgrepo-com.svg" alt="">`
+    isDark = !isDark        
+    document.body.style.backgroundColor = isDark ? 'rgb(151, 7, 7)' : 'rgb(211, 35, 35)'     
+    toggle.innerHTML = isDark ?  `<img src="./icons/light-svgrepo-com.svg" alt="light-mode-toggle">`:`<img src="./icons/dark-mode-svgrepo-com.svg" alt="dark-mode-toggle">`
     document.body.style.transition = '1.5s ease-in-out'
     
     buttons.forEach((element) => {    
-        element.style.backgroundColor = isDark ?  '#F39C12' : '#F39C12'        
-        element.style.color = isDark ? "#2C2C2C" : "#F5F5F5" 
-        
+        element.style.backgroundColor = isDark ?  '#F39C12' : '#F39C12'               
     })    
 })
 
